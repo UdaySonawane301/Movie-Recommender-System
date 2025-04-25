@@ -8,7 +8,7 @@ import requests
 from time import sleep
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=3ca5507204a250df58233b461f74c62a&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YourAPIKey&language=en-US"
     try:
         response = requests.get(url)
         response.raise_for_status()
